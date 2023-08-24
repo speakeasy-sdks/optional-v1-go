@@ -1,0 +1,698 @@
+openapi: 3.0.0
+info:
+  title: Optional and nullable
+  description: ''
+  contact: {}
+  version: '1.0'
+servers:
+- url: http://localhost:3000
+  variables: {}
+paths:
+  /optionalNullable/sendChild:
+    post:
+      tags:
+      - Body
+      summary: sendChild
+      description: ''
+      operationId: sendChild
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChildClass'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendSimpleDate:
+    post:
+      tags:
+      - Simple date
+      summary: sendSimpleDate
+      description: ''
+      operationId: sendSimpleDate
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/simpledate'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendSimpleDateArray:
+    post:
+      tags:
+      - Simple date
+      summary: sendSimpleDateArray
+      description: ''
+      operationId: sendSimpleDateArray
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/simpledatearray'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendRfc1123Date:
+    post:
+      tags:
+      - Rfc date
+      summary: sendRfc1123Date
+      description: ''
+      operationId: sendRfc1123Date
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Rfc1123date'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendRfc1123DateArray:
+    post:
+      tags:
+      - Rfc date
+      summary: sendRfc1123DateArray
+      description: ''
+      operationId: sendRfc1123DateArray
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Rfc1123datearray'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendRfc1123DateMap:
+    post:
+      tags:
+      - Rfc date
+      summary: sendRfc1123DateMap
+      description: ''
+      operationId: sendRfc1123DateMap
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Rfc1123datemap'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendUnixDate:
+    post:
+      tags:
+      - Unix date
+      summary: sendUnixDate
+      description: ''
+      operationId: sendUnixDate
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/unixdate'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendUnixDateArray:
+    post:
+      tags:
+      - Unix date
+      summary: sendUnixDateArray
+      description: ''
+      operationId: sendUnixDateArray
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/unixdatearray'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+  /optionalNullable/sendUnixDateMap:
+    post:
+      tags:
+      - Unix date
+      summary: sendUnixDateMap
+      description: ''
+      operationId: sendUnixDateMap
+      parameters:
+      - name: unSet
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: setToNull
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: boolean
+      - name: field
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/unixdatemap'
+        required: true
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerResponse'
+      deprecated: false
+components:
+  schemas:
+    GrandParentClass:
+      title: GrandParentClass
+      required:
+      - Grand_Parent_Required_Nullable
+      - Grand_Parent_Required
+      type: object
+      properties:
+        Grand_Parent_Optional:
+          type: string
+        Grand_Parent_Required_Nullable:
+          type: string
+          nullable: true
+        Grand_Parent_Required:
+          type: string
+      description: ''
+    ParentClass:
+      title: ParentClass
+      allOf:
+      - $ref: '#/components/schemas/GrandParentClass'
+      - required:
+        - Parent_Required_Nullable
+        - Parent_Required
+        type: object
+        properties:
+          class:
+            type: integer
+            format: int32
+            default: 23
+            nullable: true
+          precision:
+            type: number
+            nullable: true
+          Big_Decimal:
+            type: string
+            format: bigdecimal
+            nullable: true
+          Parent_Optional_Nullable_With_Default_Value:
+            type: string
+            default: Has default value
+            nullable: true
+          Parent_Optional:
+            type: string
+          Parent_Required_Nullable:
+            type: string
+            nullable: true
+          Parent_Required:
+            type: string
+      description: ''
+    ChildClass:
+      title: ChildClass
+      allOf:
+      - $ref: '#/components/schemas/ParentClass'
+      - required:
+        - Required_Nullable
+        - Required
+        type: object
+        properties:
+          Optional_Nullable:
+            type: string
+            nullable: true
+          Optional_Nullable_With_Default_Value:
+            type: string
+            default: With default value
+            nullable: true
+          Optional:
+            type: string
+          Required_Nullable:
+            type: string
+            nullable: true
+          Required:
+            type: string
+          Child_Class_Array:
+            type: array
+            items:
+              $ref: '#/components/schemas/ChildClass'
+            description: ''
+            nullable: true
+      description: ''
+    Child2Class:
+      title: Child2Class
+      allOf:
+      - $ref: '#/components/schemas/ParentClass'
+      - required:
+        - Required_Nullable
+        - Required
+        type: object
+        properties:
+          Optional:
+            type: string
+          Required_Nullable:
+            type: string
+            nullable: true
+          Required:
+            type: string
+      description: ''
+    simpledate:
+      title: simpledate
+      type: object
+      properties:
+        dateNullable:
+          type: string
+          format: date
+          nullable: true
+          example: 1994-02-13
+        date:
+          type: string
+          format: date
+          example: 1994-02-13
+    simpledatearray:
+      title: simpledatearray
+      type: object
+      properties:
+        date:
+          type: array
+          items:
+            type: string
+            format: date
+          description: ''
+          nullable: true
+          example:
+          - 1994-02-13
+          - 1994-02-14
+        date1:
+          type: array
+          items:
+            type: string
+            format: date
+          description: ''
+          example:
+          - 1994-02-13
+          - 1994-02-14
+    Rfc1123date:
+      title: Rfc1123date
+      required:
+      - dateTime1
+      type: object
+      properties:
+        dateTime:
+          type: string
+          format: date-time-rfc1123
+          nullable: true
+        dateTime1:
+          type: string
+          format: date-time-rfc1123
+    Rfc1123datearray:
+      title: Rfc1123datearray
+      required:
+      - dateTime1
+      type: object
+      properties:
+        dateTime:
+          type: array
+          items:
+            type: string
+            format: date-time-rfc1123
+          description: ''
+          nullable: true
+        dateTime1:
+          type: array
+          items:
+            type: string
+            format: date-time-rfc1123
+          description: ''
+    Rfc1123datemap:
+      title: Rfc1123datemap
+      required:
+      - dateTime1
+      type: object
+      properties:
+        dateTime:
+          type: object
+          additionalProperties:
+            type: string
+            format: date-time-rfc1123
+          nullable: true
+        dateTime1:
+          type: object
+          additionalProperties:
+            type: string
+            format: date-time-rfc1123
+    unixdate:
+      title: unixdate
+      required:
+      - dateTime1
+      type: object
+      properties:
+        dateTime:
+          type: number
+          format: unix-timestamp
+          nullable: true
+          example: 1484719381
+        dateTime1:
+          type: number
+          format: unix-timestamp
+          example: 1484719381
+    unixdatearray:
+      title: unixdatearray
+      required:
+      - dateTime1
+      type: object
+      properties:
+        dateTime:
+          type: array
+          items:
+            type: number
+            format: unix-timestamp
+          description: ''
+          nullable: true
+        dateTime1:
+          type: array
+          items:
+            type: number
+            format: unix-timestamp
+          description: ''
+    unixdatemap:
+      title: unixdatemap
+      required:
+      - dateTime1
+      type: object
+      properties:
+        dateTime:
+          type: object
+          additionalProperties:
+            type: number
+            format: unix-timestamp
+          nullable: true
+        dateTime1:
+          type: object
+          additionalProperties:
+            type: number
+            format: unix-timestamp
+    ServerResponse:
+      title: ServerResponse
+      required:
+      - passed
+      type: object
+      properties:
+        passed:
+          type: boolean
+        Message:
+          type: string
+        input:
+          type: object
+          additionalProperties:
+            type: object
+tags:
+- name: Body
+  description: ''
+- name: Simple date
+  description: ''
+- name: Rfc date
+  description: ''
+- name: Unix date
+  description: ''
