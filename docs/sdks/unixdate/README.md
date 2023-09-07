@@ -28,7 +28,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDate(ctx, operations.SendUnixDateRequest{
-        Field: "natus",
+        Field: "nam",
         SetToNull: false,
         UnSet: false,
         Unixdate: shared.Unixdate{
@@ -81,20 +81,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDateArray(ctx, operations.SendUnixDateArrayRequest{
-        Field: "sed",
+        Field: "officia",
         SetToNull: false,
         UnSet: false,
         Unixdatearray: shared.Unixdatearray{
             DateTime: []float64{
-                2223.21,
-                6169.34,
-                3864.89,
+                5820.2,
             },
             DateTime1: []float64{
-                9025.99,
-                6818.2,
-                4499.5,
-                3595.08,
+                1433.53,
             },
         },
     })
@@ -143,19 +138,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDateMap(ctx, operations.SendUnixDateMapRequest{
-        Field: "iste",
+        Field: "deleniti",
         SetToNull: false,
         UnSet: false,
         Unixdatemap: shared.Unixdatemap{
             DateTime: map[string]float64{
-                "saepe": 6976.31,
-                "architecto": 602.25,
+                "hic": 7586.16,
             },
             DateTime1: map[string]float64{
-                "est": 6531.4,
-                "laborum": 1709.09,
-                "dolorem": 3581.52,
-                "explicabo": 7506.86,
+                "totam": 1059.07,
             },
         },
     })

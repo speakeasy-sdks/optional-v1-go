@@ -28,7 +28,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDate(ctx, operations.SendSimpleDateRequest{
-        Field: "totam",
+        Field: "quod",
         SetToNull: false,
         Simpledate: shared.Simpledate{
             Date: types.MustDateFromString("1994-02-13"),
@@ -82,17 +82,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDateArray(ctx, operations.SendSimpleDateArrayRequest{
-        Field: "beatae",
+        Field: "esse",
         SetToNull: false,
         Simpledatearray: shared.Simpledatearray{
             Date: []types.Date{
-                types.MustDateFromString("2022-09-26"),
-                types.MustDateFromString("2022-03-24"),
+                types.MustDateFromString("2021-06-10"),
             },
             Date1: []types.Date{
-                types.MustDateFromString("2022-10-13"),
-                types.MustDateFromString("2022-09-24"),
-                types.MustDateFromString("2022-09-04"),
+                types.MustDateFromString("2022-10-06"),
             },
         },
         UnSet: false,
