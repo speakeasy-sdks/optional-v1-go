@@ -7,16 +7,16 @@ type ChildClass struct {
 	ChildClassArray                        []ChildClass `json:"Child_Class_Array,omitempty"`
 	GrandParentOptional                    *string      `json:"Grand_Parent_Optional,omitempty"`
 	GrandParentRequired                    string       `json:"Grand_Parent_Required"`
-	GrandParentRequiredNullable            string       `json:"Grand_Parent_Required_Nullable"`
+	GrandParentRequiredNullable            *string      `json:"Grand_Parent_Required_Nullable"`
 	Optional                               *string      `json:"Optional,omitempty"`
 	OptionalNullable                       *string      `json:"Optional_Nullable,omitempty"`
 	OptionalNullableWithDefaultValue       *string      `json:"Optional_Nullable_With_Default_Value,omitempty"`
 	ParentOptional                         *string      `json:"Parent_Optional,omitempty"`
 	ParentOptionalNullableWithDefaultValue *string      `json:"Parent_Optional_Nullable_With_Default_Value,omitempty"`
 	ParentRequired                         string       `json:"Parent_Required"`
-	ParentRequiredNullable                 string       `json:"Parent_Required_Nullable"`
+	ParentRequiredNullable                 *string      `json:"Parent_Required_Nullable"`
 	Required                               string       `json:"Required"`
-	RequiredNullable                       string       `json:"Required_Nullable"`
+	RequiredNullable                       *string      `json:"Required_Nullable"`
 	Class                                  *int         `json:"class,omitempty"`
 	Precision                              *float64     `json:"precision,omitempty"`
 }
@@ -49,9 +49,9 @@ func (o *ChildClass) GetGrandParentRequired() string {
 	return o.GrandParentRequired
 }
 
-func (o *ChildClass) GetGrandParentRequiredNullable() string {
+func (o *ChildClass) GetGrandParentRequiredNullable() *string {
 	if o == nil {
-		return ""
+		return nil
 	}
 	return o.GrandParentRequiredNullable
 }
@@ -98,9 +98,9 @@ func (o *ChildClass) GetParentRequired() string {
 	return o.ParentRequired
 }
 
-func (o *ChildClass) GetParentRequiredNullable() string {
+func (o *ChildClass) GetParentRequiredNullable() *string {
 	if o == nil {
-		return ""
+		return nil
 	}
 	return o.ParentRequiredNullable
 }
@@ -112,9 +112,9 @@ func (o *ChildClass) GetRequired() string {
 	return o.Required
 }
 
-func (o *ChildClass) GetRequiredNullable() string {
+func (o *ChildClass) GetRequiredNullable() *string {
 	if o == nil {
-		return ""
+		return nil
 	}
 	return o.RequiredNullable
 }
