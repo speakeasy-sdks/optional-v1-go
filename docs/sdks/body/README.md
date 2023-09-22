@@ -16,37 +16,37 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalandnullable.String("delectus"),
+            BigDecimal: optionalv1go.String("perferendis"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalandnullable.String("tempora"),
-            GrandParentRequired: "suscipit",
-            GrandParentRequiredNullable: "molestiae",
-            Optional: optionalandnullable.String("minus"),
-            OptionalNullable: optionalandnullable.String("placeat"),
-            OptionalNullableWithDefaultValue: optionalandnullable.String("voluptatum"),
-            ParentOptional: optionalandnullable.String("iusto"),
-            ParentOptionalNullableWithDefaultValue: optionalandnullable.String("excepturi"),
-            ParentRequired: "nisi",
-            ParentRequiredNullable: "recusandae",
-            Required: "temporibus",
-            RequiredNullable: "ab",
-            Class: optionalandnullable.Int(337396),
-            Precision: optionalandnullable.Float64(871.29),
+            GrandParentOptional: optionalv1go.String("ipsam"),
+            GrandParentRequired: "repellendus",
+            GrandParentRequiredNullable: "sapiente",
+            Optional: optionalv1go.String("quo"),
+            OptionalNullable: optionalv1go.String("odit"),
+            OptionalNullableWithDefaultValue: optionalv1go.String("at"),
+            ParentOptional: optionalv1go.String("at"),
+            ParentOptionalNullableWithDefaultValue: optionalv1go.String("maiores"),
+            ParentRequired: "molestiae",
+            ParentRequiredNullable: "quod",
+            Required: "quod",
+            RequiredNullable: "esse",
+            Class: optionalv1go.Int(520478),
+            Precision: optionalv1go.Float64(7805.29),
         },
-        Field: "deserunt",
+        Field: "dolorum",
         SetToNull: false,
         UnSet: false,
     })

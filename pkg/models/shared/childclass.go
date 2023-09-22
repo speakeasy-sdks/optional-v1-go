@@ -2,6 +2,10 @@
 
 package shared
 
+import (
+	"github.com/speakeasy-sdks/optional-v1-go/pkg/utils"
+)
+
 type ChildClass struct {
 	BigDecimal                             *string      `json:"Big_Decimal,omitempty"`
 	ChildClassArray                        []ChildClass `json:"Child_Class_Array,omitempty"`
@@ -10,15 +14,26 @@ type ChildClass struct {
 	GrandParentRequiredNullable            *string      `json:"Grand_Parent_Required_Nullable"`
 	Optional                               *string      `json:"Optional,omitempty"`
 	OptionalNullable                       *string      `json:"Optional_Nullable,omitempty"`
-	OptionalNullableWithDefaultValue       *string      `json:"Optional_Nullable_With_Default_Value,omitempty"`
+	OptionalNullableWithDefaultValue       *string      `default:"With default value" json:"Optional_Nullable_With_Default_Value"`
 	ParentOptional                         *string      `json:"Parent_Optional,omitempty"`
-	ParentOptionalNullableWithDefaultValue *string      `json:"Parent_Optional_Nullable_With_Default_Value,omitempty"`
+	ParentOptionalNullableWithDefaultValue *string      `default:"Has default value" json:"Parent_Optional_Nullable_With_Default_Value"`
 	ParentRequired                         string       `json:"Parent_Required"`
 	ParentRequiredNullable                 *string      `json:"Parent_Required_Nullable"`
 	Required                               string       `json:"Required"`
 	RequiredNullable                       *string      `json:"Required_Nullable"`
-	Class                                  *int         `json:"class,omitempty"`
+	Class                                  *int         `default:"23" json:"class"`
 	Precision                              *float64     `json:"precision,omitempty"`
+}
+
+func (c ChildClass) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(c, "", false)
+}
+
+func (c *ChildClass) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &c, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *ChildClass) GetBigDecimal() *string {

@@ -10,45 +10,43 @@ go get github.com/speakeasy-sdks/optional-v1-go
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalandnullable.String("corrupti"),
+            BigDecimal: optionalv1go.String("delectus"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalandnullable.String("provident"),
-            GrandParentRequired: "distinctio",
-            GrandParentRequiredNullable: "quibusdam",
-            Optional: optionalandnullable.String("unde"),
-            OptionalNullable: optionalandnullable.String("nulla"),
-            OptionalNullableWithDefaultValue: optionalandnullable.String("corrupti"),
-            ParentOptional: optionalandnullable.String("illum"),
-            ParentOptionalNullableWithDefaultValue: optionalandnullable.String("vel"),
-            ParentRequired: "error",
-            ParentRequiredNullable: "deserunt",
-            Required: "suscipit",
-            RequiredNullable: "iure",
-            Class: optionalandnullable.Int(297534),
-            Precision: optionalandnullable.Float64(8917.73),
+            GrandParentOptional: optionalv1go.String("tempora"),
+            GrandParentRequired: "suscipit",
+            GrandParentRequiredNullable: "molestiae",
+            Optional: optionalv1go.String("minus"),
+            OptionalNullable: optionalv1go.String("placeat"),
+            OptionalNullableWithDefaultValue: optionalv1go.String("voluptatum"),
+            ParentOptional: optionalv1go.String("iusto"),
+            ParentOptionalNullableWithDefaultValue: optionalv1go.String("excepturi"),
+            ParentRequired: "nisi",
+            ParentRequiredNullable: "recusandae",
+            Required: "temporibus",
+            RequiredNullable: "ab",
+            Class: optionalv1go.Int(337396),
+            Precision: optionalv1go.Float64(871.29),
         },
-        Field: "ipsa",
+        Field: "deserunt",
         SetToNull: false,
         UnSet: false,
     })
@@ -88,6 +86,60 @@ func main() {
 * [SendUnixDateArray](docs/sdks/unixdate/README.md#sendunixdatearray) - sendUnixDateArray
 * [SendUnixDateMap](docs/sdks/unixdate/README.md#sendunixdatemap) - sendUnixDateMap
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `Next` method that can be called to pull down the next group of results. If the
+return value of `Next` is `nil`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+
+
+<!-- Start Go Types -->
+# Special Types
+
+This SDK defines the following custom types to assist with marshalling and unmarshalling data.
+
+## Date
+
+`types.Date` is a wrapper around time.Time that allows for JSON marshaling a date string formatted as "2006-01-02".
+
+### Usage
+
+```go
+d1 := types.NewDate(time.Now()) // returns *types.Date
+
+d2 := types.DateFromTime(time.Now()) // returns types.Date
+
+d3, err := types.NewDateFromString("2019-01-01") // returns *types.Date, error
+
+d4, err := types.DateFromString("2019-01-01") // returns types.Date, error
+
+d5 := types.MustNewDateFromString("2019-01-01") // returns *types.Date and panics on error
+
+d6 := types.MustDateFromString("2019-01-01") // returns types.Date and panics on error
+```
+<!-- End Go Types -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 

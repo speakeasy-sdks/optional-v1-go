@@ -7,35 +7,35 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalandnullable.String("corrupti"),
+            BigDecimal: optionalv1go.String("corrupti"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalandnullable.String("provident"),
+            GrandParentOptional: optionalv1go.String("provident"),
             GrandParentRequired: "distinctio",
             GrandParentRequiredNullable: "quibusdam",
-            Optional: optionalandnullable.String("unde"),
-            OptionalNullable: optionalandnullable.String("nulla"),
-            OptionalNullableWithDefaultValue: optionalandnullable.String("corrupti"),
-            ParentOptional: optionalandnullable.String("illum"),
-            ParentOptionalNullableWithDefaultValue: optionalandnullable.String("vel"),
+            Optional: optionalv1go.String("unde"),
+            OptionalNullable: optionalv1go.String("nulla"),
+            OptionalNullableWithDefaultValue: optionalv1go.String("corrupti"),
+            ParentOptional: optionalv1go.String("illum"),
+            ParentOptionalNullableWithDefaultValue: optionalv1go.String("vel"),
             ParentRequired: "error",
             ParentRequiredNullable: "deserunt",
             Required: "suscipit",
             RequiredNullable: "iure",
-            Class: optionalandnullable.Int(297534),
-            Precision: optionalandnullable.Float64(8917.73),
+            Class: optionalv1go.Int(297534),
+            Precision: optionalv1go.Float64(8917.73),
         },
         Field: "ipsa",
         SetToNull: false,

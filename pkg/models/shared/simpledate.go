@@ -4,11 +4,23 @@ package shared
 
 import (
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/types"
+	"github.com/speakeasy-sdks/optional-v1-go/pkg/utils"
 )
 
 type Simpledate struct {
 	Date         *types.Date `json:"date,omitempty"`
 	DateNullable *types.Date `json:"dateNullable,omitempty"`
+}
+
+func (s Simpledate) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(s, "", false)
+}
+
+func (s *Simpledate) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &s, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *Simpledate) GetDate() *types.Date {

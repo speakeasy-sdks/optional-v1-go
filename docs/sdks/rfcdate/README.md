@@ -18,21 +18,21 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.RfcDate.SendRfc1123Date(ctx, operations.SendRfc1123DateRequest{
         Rfc1123date: shared.Rfc1123date{
-            DateTime: optionalandnullable.String("perferendis"),
-            DateTime1: "ipsam",
+            DateTime: optionalv1go.String("dicta"),
+            DateTime1: "nam",
         },
-        Field: "repellendus",
+        Field: "officia",
         SetToNull: false,
         UnSet: false,
     })
@@ -71,25 +71,25 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.RfcDate.SendRfc1123DateArray(ctx, operations.SendRfc1123DateArrayRequest{
         Rfc1123datearray: shared.Rfc1123datearray{
             DateTime: []string{
-                "sapiente",
+                "occaecati",
             },
             DateTime1: []string{
-                "quo",
+                "fugit",
             },
         },
-        Field: "odit",
+        Field: "deleniti",
         SetToNull: false,
         UnSet: false,
     })
@@ -128,25 +128,25 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.RfcDate.SendRfc1123DateMap(ctx, operations.SendRfc1123DateMapRequest{
         Rfc1123datemap: shared.Rfc1123datemap{
             DateTime: map[string]string{
-                "at": "at",
+                "hic": "optio",
             },
             DateTime1: map[string]string{
-                "maiores": "molestiae",
+                "totam": "beatae",
             },
         },
-        Field: "quod",
+        Field: "commodi",
         SetToNull: false,
         UnSet: false,
     })

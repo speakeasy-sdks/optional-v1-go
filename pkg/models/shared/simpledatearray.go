@@ -4,11 +4,23 @@ package shared
 
 import (
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/types"
+	"github.com/speakeasy-sdks/optional-v1-go/pkg/utils"
 )
 
 type Simpledatearray struct {
 	Date  []types.Date `json:"date,omitempty"`
 	Date1 []types.Date `json:"date1,omitempty"`
+}
+
+func (s Simpledatearray) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(s, "", false)
+}
+
+func (s *Simpledatearray) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &s, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *Simpledatearray) GetDate() []types.Date {

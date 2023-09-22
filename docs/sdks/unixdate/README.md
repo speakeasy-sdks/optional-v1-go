@@ -18,21 +18,21 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDate(ctx, operations.SendUnixDateRequest{
-        Field: "nam",
+        Field: "ipsum",
         SetToNull: false,
         UnSet: false,
         Unixdate: shared.Unixdate{
-            DateTime: optionalandnullable.Float64(1484719381),
+            DateTime: optionalv1go.Float64(1484719381),
             DateTime1: 1484719381,
         },
     })
@@ -71,25 +71,25 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDateArray(ctx, operations.SendUnixDateArrayRequest{
-        Field: "officia",
+        Field: "excepturi",
         SetToNull: false,
         UnSet: false,
         Unixdatearray: shared.Unixdatearray{
             DateTime: []float64{
-                5820.2,
+                1352.18,
             },
             DateTime1: []float64{
-                1433.53,
+                187.89,
             },
         },
     })
@@ -128,25 +128,25 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDateMap(ctx, operations.SendUnixDateMapRequest{
-        Field: "deleniti",
+        Field: "ad",
         SetToNull: false,
         UnSet: false,
         Unixdatemap: shared.Unixdatemap{
             DateTime: map[string]float64{
-                "hic": 7586.16,
+                "natus": 1496.75,
             },
             DateTime1: map[string]float64{
-                "totam": 1059.07,
+                "iste": 2223.21,
             },
         },
     })

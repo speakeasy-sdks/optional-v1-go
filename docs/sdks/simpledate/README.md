@@ -17,18 +17,18 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/types"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDate(ctx, operations.SendSimpleDateRequest{
-        Field: "quod",
+        Field: "molestiae",
         SetToNull: false,
         Simpledate: shared.Simpledate{
             Date: types.MustDateFromString("1994-02-13"),
@@ -71,25 +71,25 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/optional-v1-go"
+	optionalv1go "github.com/speakeasy-sdks/optional-v1-go"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/operations"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/models/shared"
 	"github.com/speakeasy-sdks/optional-v1-go/pkg/types"
 )
 
 func main() {
-    s := optionalandnullable.New()
+    s := optionalv1go.New()
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDateArray(ctx, operations.SendSimpleDateArrayRequest{
-        Field: "esse",
+        Field: "modi",
         SetToNull: false,
         Simpledatearray: shared.Simpledatearray{
             Date: []types.Date{
-                types.MustDateFromString("2021-06-10"),
+                types.MustDateFromString("2022-03-24"),
             },
             Date1: []types.Date{
-                types.MustDateFromString("2022-10-06"),
+                types.MustDateFromString("2022-02-02"),
             },
         },
         UnSet: false,

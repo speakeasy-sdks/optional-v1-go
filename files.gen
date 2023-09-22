@@ -10,9 +10,11 @@ pkg/types/bigint.go
 pkg/types/date.go
 pkg/types/datetime.go
 pkg/types/decimal.go
+pkg/types/pointers.go
 pkg/utils/contenttype.go
 pkg/utils/form.go
 pkg/utils/headers.go
+pkg/utils/json.go
 pkg/utils/pathparams.go
 pkg/utils/queryparams.go
 pkg/utils/requestbody.go
@@ -38,11 +40,6 @@ pkg/models/shared/simpledatearray.go
 pkg/models/shared/unixdate.go
 pkg/models/shared/unixdatearray.go
 pkg/models/shared/unixdatemap.go
-docs/sdks/optionalandnullable/README.md
-docs/sdks/body/README.md
-docs/sdks/rfcdate/README.md
-docs/sdks/simpledate/README.md
-docs/sdks/unixdate/README.md
 USAGE.md
 docs/models/operations/sendchildrequest.md
 docs/models/operations/sendchildresponse.md
@@ -74,4 +71,9 @@ docs/models/shared/simpledatearray.md
 docs/models/shared/unixdate.md
 docs/models/shared/unixdatearray.md
 docs/models/shared/unixdatemap.md
+docs/sdks/optionalandnullable/README.md
+docs/sdks/body/README.md
+docs/sdks/rfcdate/README.md
+docs/sdks/simpledate/README.md
+docs/sdks/unixdate/README.md
 .gitattributes
