@@ -1,4 +1,5 @@
 # UnixDate
+(*UnixDate*)
 
 ### Available Operations
 
@@ -28,7 +29,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDate(ctx, operations.SendUnixDateRequest{
-        Field: "ipsum",
+        Field: "sky",
         SetToNull: false,
         UnSet: false,
         Unixdate: shared.Unixdate{
@@ -81,15 +82,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDateArray(ctx, operations.SendUnixDateArrayRequest{
-        Field: "excepturi",
+        Field: "magni digital contention",
         SetToNull: false,
         UnSet: false,
         Unixdatearray: shared.Unixdatearray{
             DateTime: []float64{
-                1352.18,
+                3256.46,
             },
             DateTime1: []float64{
-                187.89,
+                9940.66,
             },
         },
     })
@@ -138,15 +139,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.UnixDate.SendUnixDateMap(ctx, operations.SendUnixDateMapRequest{
-        Field: "ad",
+        Field: "Facilitator similarity Southeast",
         SetToNull: false,
         UnSet: false,
         Unixdatemap: shared.Unixdatemap{
             DateTime: map[string]float64{
-                "natus": 1496.75,
+                "sequi": 8432.98,
             },
             DateTime1: map[string]float64{
-                "iste": 2223.21,
+                "sed": 6696.48,
             },
         },
     })
