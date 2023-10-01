@@ -1,4 +1,5 @@
 # Body
+(*Body*)
 
 ### Available Operations
 
@@ -27,26 +28,26 @@ func main() {
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalv1go.String("perferendis"),
+            BigDecimal: optionalv1go.String("Distributed"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalv1go.String("ipsam"),
-            GrandParentRequired: "repellendus",
-            GrandParentRequiredNullable: "sapiente",
-            Optional: optionalv1go.String("quo"),
-            OptionalNullable: optionalv1go.String("odit"),
-            OptionalNullableWithDefaultValue: optionalv1go.String("at"),
-            ParentOptional: optionalv1go.String("at"),
-            ParentOptionalNullableWithDefaultValue: optionalv1go.String("maiores"),
-            ParentRequired: "molestiae",
-            ParentRequiredNullable: "quod",
-            Required: "quod",
-            RequiredNullable: "esse",
-            Class: optionalv1go.Int(520478),
-            Precision: optionalv1go.Float64(7805.29),
+            GrandParentOptional: optionalv1go.String("transition Berkshire"),
+            GrandParentRequired: "program methodology",
+            GrandParentRequiredNullable: "knowledge linear support",
+            Optional: optionalv1go.String("standardization Future Northwest"),
+            OptionalNullable: optionalv1go.String("East Kia"),
+            OptionalNullableWithDefaultValue: optionalv1go.String("system Bedfordshire"),
+            ParentOptional: optionalv1go.String("rich"),
+            ParentOptionalNullableWithDefaultValue: optionalv1go.String("Gasoline Electronic"),
+            ParentRequired: "SSL Frozen Baby",
+            ParentRequiredNullable: "Sterling East whiteboard",
+            Required: "Engineer Dakota",
+            RequiredNullable: "scalable AI Bacon",
+            Class: optionalv1go.Int(462184),
+            Precision: optionalv1go.Float64(9784.81),
         },
-        Field: "dolorum",
+        Field: "lest East",
         SetToNull: false,
         UnSet: false,
     })
