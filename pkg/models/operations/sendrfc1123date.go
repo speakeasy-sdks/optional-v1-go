@@ -43,10 +43,13 @@ func (o *SendRfc1123DateRequest) GetUnSet() bool {
 }
 
 type SendRfc1123DateResponse struct {
+	// HTTP response content type for this operation
 	ContentType    string
 	ServerResponse *shared.ServerResponse
-	StatusCode     int
-	RawResponse    *http.Response
+	// HTTP response status code for this operation
+	StatusCode int
+	// Raw HTTP response; suitable for custom response parsing
+	RawResponse *http.Response
 }
 
 func (o *SendRfc1123DateResponse) GetContentType() string {

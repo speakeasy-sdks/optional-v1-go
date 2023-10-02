@@ -27,26 +27,26 @@ func main() {
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalv1go.String("delectus"),
+            BigDecimal: optionalv1go.String("Distributed"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalv1go.String("tempora"),
-            GrandParentRequired: "suscipit",
-            GrandParentRequiredNullable: "molestiae",
-            Optional: optionalv1go.String("minus"),
-            OptionalNullable: optionalv1go.String("placeat"),
-            OptionalNullableWithDefaultValue: optionalv1go.String("voluptatum"),
-            ParentOptional: optionalv1go.String("iusto"),
-            ParentOptionalNullableWithDefaultValue: optionalv1go.String("excepturi"),
-            ParentRequired: "nisi",
-            ParentRequiredNullable: "recusandae",
-            Required: "temporibus",
-            RequiredNullable: "ab",
-            Class: optionalv1go.Int(337396),
-            Precision: optionalv1go.Float64(871.29),
+            GrandParentOptional: optionalv1go.String("transition Berkshire"),
+            GrandParentRequired: "program methodology",
+            GrandParentRequiredNullable: "knowledge linear support",
+            Optional: optionalv1go.String("standardization Future Northwest"),
+            OptionalNullable: optionalv1go.String("East Kia"),
+            OptionalNullableWithDefaultValue: optionalv1go.String("system Bedfordshire"),
+            ParentOptional: optionalv1go.String("rich"),
+            ParentOptionalNullableWithDefaultValue: optionalv1go.String("Gasoline Electronic"),
+            ParentRequired: "SSL Frozen Baby",
+            ParentRequiredNullable: "Sterling East whiteboard",
+            Required: "Engineer Dakota",
+            RequiredNullable: "scalable AI Bacon",
+            Class: optionalv1go.Int(462184),
+            Precision: optionalv1go.Float64(9784.81),
         },
-        Field: "deserunt",
+        Field: "lest East",
         SetToNull: false,
         UnSet: false,
     })
@@ -91,8 +91,6 @@ func main() {
 
 <!-- Start Dev Containers -->
 
-
-
 <!-- End Dev Containers -->
 
 
@@ -105,8 +103,6 @@ returned response object will have a `Next` method that can be called to pull do
 return value of `Next` is `nil`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 
