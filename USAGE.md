@@ -18,26 +18,17 @@ func main() {
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalv1go.String("corrupti"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalv1go.String("provident"),
-            GrandParentRequired: "distinctio",
-            GrandParentRequiredNullable: "quibusdam",
-            Optional: optionalv1go.String("unde"),
-            OptionalNullable: optionalv1go.String("nulla"),
-            OptionalNullableWithDefaultValue: optionalv1go.String("corrupti"),
-            ParentOptional: optionalv1go.String("illum"),
-            ParentOptionalNullableWithDefaultValue: optionalv1go.String("vel"),
-            ParentRequired: "error",
-            ParentRequiredNullable: "deserunt",
-            Required: "suscipit",
-            RequiredNullable: "iure",
-            Class: optionalv1go.Int(297534),
-            Precision: optionalv1go.Float64(8917.73),
+            GrandParentRequired: "Distributed",
+            GrandParentRequiredNullable: "transition Berkshire",
+            ParentRequired: "program methodology",
+            ParentRequiredNullable: "knowledge linear support",
+            Required: "standardization Future Northwest",
+            RequiredNullable: "East Kia",
         },
-        Field: "ipsa",
+        Field: "system Bedfordshire",
         SetToNull: false,
         UnSet: false,
     })

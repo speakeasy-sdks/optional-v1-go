@@ -1,4 +1,5 @@
 # SimpleDate
+(*SimpleDate*)
 
 ### Available Operations
 
@@ -28,7 +29,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDate(ctx, operations.SendSimpleDateRequest{
-        Field: "molestiae",
+        Field: "siemens black",
         SetToNull: false,
         Simpledate: shared.Simpledate{
             Date: types.MustDateFromString("1994-02-13"),
@@ -82,14 +83,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDateArray(ctx, operations.SendSimpleDateArrayRequest{
-        Field: "modi",
+        Field: "Handcrafted nihil",
         SetToNull: false,
         Simpledatearray: shared.Simpledatearray{
             Date: []types.Date{
-                types.MustDateFromString("2022-03-24"),
+                types.MustDateFromString("1994-02-13 00:00:00 +0000 UTC"),
+                types.MustDateFromString("1994-02-14 00:00:00 +0000 UTC"),
             },
             Date1: []types.Date{
-                types.MustDateFromString("2022-02-02"),
+                types.MustDateFromString("1994-02-13 00:00:00 +0000 UTC"),
+                types.MustDateFromString("1994-02-14 00:00:00 +0000 UTC"),
             },
         },
         UnSet: false,

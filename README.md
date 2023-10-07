@@ -27,26 +27,17 @@ func main() {
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalv1go.String("delectus"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalv1go.String("tempora"),
-            GrandParentRequired: "suscipit",
-            GrandParentRequiredNullable: "molestiae",
-            Optional: optionalv1go.String("minus"),
-            OptionalNullable: optionalv1go.String("placeat"),
-            OptionalNullableWithDefaultValue: optionalv1go.String("voluptatum"),
-            ParentOptional: optionalv1go.String("iusto"),
-            ParentOptionalNullableWithDefaultValue: optionalv1go.String("excepturi"),
-            ParentRequired: "nisi",
-            ParentRequiredNullable: "recusandae",
-            Required: "temporibus",
-            RequiredNullable: "ab",
-            Class: optionalv1go.Int(337396),
-            Precision: optionalv1go.Float64(871.29),
+            GrandParentRequired: "Distributed",
+            GrandParentRequiredNullable: "transition Berkshire",
+            ParentRequired: "program methodology",
+            ParentRequiredNullable: "knowledge linear support",
+            Required: "standardization Future Northwest",
+            RequiredNullable: "East Kia",
         },
-        Field: "deserunt",
+        Field: "system Bedfordshire",
         SetToNull: false,
         UnSet: false,
     })
@@ -91,8 +82,6 @@ func main() {
 
 <!-- Start Dev Containers -->
 
-
-
 <!-- End Dev Containers -->
 
 
@@ -105,8 +94,6 @@ returned response object will have a `Next` method that can be called to pull do
 return value of `Next` is `nil`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 

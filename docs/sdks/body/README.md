@@ -1,4 +1,5 @@
 # Body
+(*Body*)
 
 ### Available Operations
 
@@ -27,26 +28,17 @@ func main() {
     ctx := context.Background()
     res, err := s.Body.SendChild(ctx, operations.SendChildRequest{
         ChildClass: shared.ChildClass{
-            BigDecimal: optionalv1go.String("perferendis"),
             ChildClassArray: []shared.ChildClass{
                 shared.ChildClass{},
             },
-            GrandParentOptional: optionalv1go.String("ipsam"),
-            GrandParentRequired: "repellendus",
-            GrandParentRequiredNullable: "sapiente",
-            Optional: optionalv1go.String("quo"),
-            OptionalNullable: optionalv1go.String("odit"),
-            OptionalNullableWithDefaultValue: optionalv1go.String("at"),
-            ParentOptional: optionalv1go.String("at"),
-            ParentOptionalNullableWithDefaultValue: optionalv1go.String("maiores"),
-            ParentRequired: "molestiae",
-            ParentRequiredNullable: "quod",
-            Required: "quod",
-            RequiredNullable: "esse",
-            Class: optionalv1go.Int(520478),
-            Precision: optionalv1go.Float64(7805.29),
+            GrandParentRequired: "Distributed",
+            GrandParentRequiredNullable: "transition Berkshire",
+            ParentRequired: "program methodology",
+            ParentRequiredNullable: "knowledge linear support",
+            Required: "standardization Future Northwest",
+            RequiredNullable: "East Kia",
         },
-        Field: "dolorum",
+        Field: "system Bedfordshire",
         SetToNull: false,
         UnSet: false,
     })

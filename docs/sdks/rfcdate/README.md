@@ -1,4 +1,5 @@
 # RfcDate
+(*RfcDate*)
 
 ### Available Operations
 
@@ -29,10 +30,9 @@ func main() {
     ctx := context.Background()
     res, err := s.RfcDate.SendRfc1123Date(ctx, operations.SendRfc1123DateRequest{
         Rfc1123date: shared.Rfc1123date{
-            DateTime: optionalv1go.String("dicta"),
-            DateTime1: "nam",
+            DateTime1: "Robust",
         },
-        Field: "officia",
+        Field: "Diesel woot Soap",
         SetToNull: false,
         UnSet: false,
     })
@@ -83,13 +83,13 @@ func main() {
     res, err := s.RfcDate.SendRfc1123DateArray(ctx, operations.SendRfc1123DateArrayRequest{
         Rfc1123datearray: shared.Rfc1123datearray{
             DateTime: []string{
-                "occaecati",
+                "Namibia",
             },
             DateTime1: []string{
-                "fugit",
+                "Frozen Lawrencium",
             },
         },
-        Field: "deleniti",
+        Field: "solution",
         SetToNull: false,
         UnSet: false,
     })
@@ -140,13 +140,13 @@ func main() {
     res, err := s.RfcDate.SendRfc1123DateMap(ctx, operations.SendRfc1123DateMapRequest{
         Rfc1123datemap: shared.Rfc1123datemap{
             DateTime: map[string]string{
-                "hic": "optio",
+                "blockchains": "Account beneath Uruguayo",
             },
             DateTime1: map[string]string{
-                "totam": "beatae",
+                "Pants": "Neptunium programming",
             },
         },
-        Field: "commodi",
+        Field: "Southeast Convertible East",
         SetToNull: false,
         UnSet: false,
     })
