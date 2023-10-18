@@ -30,9 +30,9 @@ func main() {
     ctx := context.Background()
     res, err := s.RfcDate.SendRfc1123Date(ctx, operations.SendRfc1123DateRequest{
         Rfc1123date: shared.Rfc1123date{
-            DateTime1: "Robust",
+            DateTime1: "Soft",
         },
-        Field: "Diesel woot Soap",
+        Field: "Bahringer",
         SetToNull: false,
         UnSet: false,
     })
@@ -83,13 +83,13 @@ func main() {
     res, err := s.RfcDate.SendRfc1123DateArray(ctx, operations.SendRfc1123DateArrayRequest{
         Rfc1123datearray: shared.Rfc1123datearray{
             DateTime: []string{
-                "Namibia",
+                "Car",
             },
             DateTime1: []string{
-                "Frozen Lawrencium",
+                "Hermaphrodite",
             },
         },
-        Field: "solution",
+        Field: "Frozen",
         SetToNull: false,
         UnSet: false,
     })
@@ -140,13 +140,13 @@ func main() {
     res, err := s.RfcDate.SendRfc1123DateMap(ctx, operations.SendRfc1123DateMapRequest{
         Rfc1123datemap: shared.Rfc1123datemap{
             DateTime: map[string]string{
-                "blockchains": "Account beneath Uruguayo",
+                "blockchains": "gyp",
             },
             DateTime1: map[string]string{
-                "Pants": "Neptunium programming",
+                "Montana": "beneath",
             },
         },
-        Field: "Southeast Convertible East",
+        Field: "Uruguayo",
         SetToNull: false,
         UnSet: false,
     })
