@@ -29,7 +29,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDate(ctx, operations.SendSimpleDateRequest{
-        Field: "Legacy",
+        Field: "string",
         SetToNull: false,
         Simpledate: shared.Simpledate{
             Date: types.MustDateFromString("1994-02-13"),
@@ -83,7 +83,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.SimpleDate.SendSimpleDateArray(ctx, operations.SendSimpleDateArrayRequest{
-        Field: "copy",
+        Field: "string",
         SetToNull: false,
         Simpledatearray: shared.Simpledatearray{
             Date: []types.Date{
